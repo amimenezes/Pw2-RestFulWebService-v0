@@ -1,4 +1,4 @@
-package pw2.webservice.openliberty.km.pw2.webservice.openliberty.km;
+package pw2.conversor.kms.mph.pw2.conversor.kms.mph;
 
 import javax.inject.Singleton;
 import javax.ws.rs.Consumes;
@@ -36,7 +36,7 @@ public class HelloController {
     // – esse método deve consumir dados por GET e
     // produzir dados em em JSON.
     @GET
-    @Path("/nosParaKmh/{nos}")
+    @Path("/nosForKmh/{nos}")
     @Produces(MediaType.APPLICATION_JSON)
     public double convertNosKmh(@PathParam("nos") final double nos)
     {
